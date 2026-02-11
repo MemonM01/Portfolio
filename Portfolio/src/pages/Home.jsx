@@ -3,68 +3,103 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-      <div>
-        <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800/70 bg-zinc-950/50 px-3 py-1 text-xs text-zinc-300">
-          <Sparkles size={14} />
-          React • Tailwind • Responsive Portfolio
-        </div>
+    <main>
+      <section className="hero">
+        <div className="container">
+          <div className="heroGrid">
+            <div>
+              <div className="pill">
+                <Sparkles size={14} />
+                Student - Computer Science - Uni of Leeds
+              </div>
 
-        <h1 className="mt-4 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-          Hi, I’m{" "}
-          <span className="bg-gradient-to-r from-fuchsia-400 to-cyan-300 bg-clip-text text-transparent">
-            Shafay
-          </span>
-          .
-          <br />
-          I build modern web experiences.
-        </h1>
+              <h1 className="h1">
+                Muhammad Shafay Memon <br></br>
+                <span className="gradText"> Upcoming Software Engineer</span>
+              </h1>
 
-        <p className="mt-4 max-w-xl text-zinc-300">
-          Mobile-first layouts (vertical on phones) and clean grids on desktop,
-          plus a hamburger menu for navigation.
-        </p>
+              <p className="lead">
+                Hi, my name is Shafay Memon. I am currently  a Student at the University of Leeds doing a degree in Computer Science, 
+                aspiring to pursue a career in software engineering. I am academically driven, consistently striving for excellence. 
+                I work well in team environments, have strong communication skills, and am deeply passionate about computer science.
+              </p>
 
-        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <NavLink
-            to="/projects"
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-semibold text-zinc-950 hover:opacity-90"
-          >
-            View Projects <ArrowRight size={18} />
-          </NavLink>
+              <div className="actions">
+                <NavLink className="btn btnPrimary" to="/projects">
+                  View Projects <ArrowRight size={18} />
+                </NavLink>
+                <NavLink className="btn btnSecondary" to="/contact">
+                  Contact Me
+                </NavLink>
+              </div>
 
-          <NavLink
-            to="/contact"
-            className="inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-800 bg-zinc-950/40 px-5 py-3 text-sm font-semibold text-white hover:bg-zinc-900/60"
-          >
-            Contact Me
-          </NavLink>
-        </div>
-      </div>
+              <div className="tags" style={{ marginTop: 16 }}>
+                {["React", "CSS", "JavaScript", "TypeScript", "Node.js", "Supabase", "Python", "HTML"].map((t) => (
+                  <span className="tag" key={t}>{t}</span>
+                ))}
+              </div>
+            </div>
 
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div className="rounded-2xl border border-zinc-800/70 bg-zinc-950/40 p-5">
-          <p className="text-sm text-zinc-400">Focus</p>
-          <p className="mt-1 text-lg font-semibold">Frontend</p>
-          <p className="mt-2 text-sm text-zinc-300">
-            React components, responsive UI, clean design.
-          </p>
+            <div className="cardGrid">
+              <div className="card">
+                <div className="cardTitle">Clean UI</div>
+                <div className="cardDesc">
+                  Modern layouts with strong spacing and readable typography.
+                </div>
+              </div>
+              <div className="card">
+                <div className="cardTitle">Responsive</div>
+                <div className="cardDesc">
+                  Mobile-first design: vertical on phones, grid on desktop.
+                </div>
+              </div>
+              <div className="card" style={{ gridColumn: "1 / -1" }}>
+                <div className="cardTitle">Fast Builds</div>
+                <div className="cardDesc">
+                  React + Vite with clean CSS for quick iteration and a premium feel.
+                </div>
+              </div>
+              <div className="card" style={{ gridColumn: "1 / -1" }}>
+                <div className="cardTitle">Now</div>
+                <div className="cardDesc">
+                  Open to internships & freelance — let’s build something cool.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="rounded-2xl border border-zinc-800/70 bg-zinc-950/40 p-5">
-          <p className="text-sm text-zinc-400">Strength</p>
-          <p className="mt-1 text-lg font-semibold">UX polish</p>
-          <p className="mt-2 text-sm text-zinc-300">
-            Smooth layouts and clear content structure.
-          </p>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="sectionTitle">Featured Projects</div>
+          <div className="sectionSub">
+            A few projects that show real UI quality and structure.
+          </div>
+
+          <div className="projectsGrid">
+            {[
+              { title: "Event Discovery Map", desc: "Find events on a map and filter by tags.", tags: ["React","Supabase","Maps", "Tailwind"] }, { title: "Tutors 4 U", desc: "Tutoring website with pricing + contact flow.", tags: ["React","CSS","UX"] },
+              { title: "Portfolio v1", desc: "Multi-page portfolio with mobile hamburger menu.", tags: ["React Router","CSS","Design"] },
+              { title: "Hackathon Build", desc: "Team project with fast prototyping and delivery.", tags: ["React","APIs","Teamwork"] },
+            ].map((p) => (
+              <div className="projectCard" key={p.title}>
+                <div className="cardTitle">{p.title}</div>
+                <div className="cardDesc">{p.desc}</div>
+                <div className="tags">
+                  {p.tags.map((t) => <span className="tag" key={t}>{t}</span>)}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ marginTop: 16 }}>
+            <NavLink className="btn btnSecondary" to="/projects">
+              See all projects
+            </NavLink>
+          </div>
         </div>
-        <div className="rounded-2xl border border-zinc-800/70 bg-zinc-950/40 p-5 sm:col-span-2">
-          <p className="text-sm text-zinc-400">Currently</p>
-          <p className="mt-1 text-lg font-semibold">Open to opportunities</p>
-          <p className="mt-2 text-sm text-zinc-300">
-            Internships • freelance • collaborations
-          </p>
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }

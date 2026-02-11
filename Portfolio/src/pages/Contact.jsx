@@ -1,34 +1,57 @@
+import Container from "../components/Container";
+import SectionHeading from "../components/SectionHeading";
+import { Button } from "../components/Button";
+import { site } from "../data/site";
+
 export default function Contact() {
   return (
-    <div className="grid gap-6 lg:grid-cols-2">
-      <div>
-        <h2 className="text-2xl font-semibold tracking-tight">Contact</h2>
-        <p className="mt-2 text-zinc-300">
-          This is a front-end form for now. Later we can connect it to EmailJS/Formspree.
-        </p>
+    <Container className="py-12">
+      <SectionHeading
+        eyebrow="Contact"
+        title="Let’s talk"
+        subtitle="Send a message below. Later we can connect this to EmailJS/Formspree."
+      />
 
-        <div className="mt-6 rounded-2xl border border-zinc-800/70 bg-zinc-950/40 p-6">
+      <div className="grid gap-6 lg:grid-cols-2">
+        <div className="rounded-2xl border border-zinc-800/70 bg-zinc-950/40 p-6 backdrop-blur">
           <p className="text-sm text-zinc-400">Email</p>
-          <p className="mt-1 font-semibold">your@email.com</p>
-          <p className="mt-4 text-sm text-zinc-400">Location</p>
-          <p className="mt-1 font-semibold">UK</p>
+          <p className="mt-1 font-semibold">{site.email}</p>
+
+          <p className="mt-6 text-sm text-zinc-400">Links</p>
+          <div className="mt-2 flex flex-col gap-2">
+            <a className="text-zinc-200 hover:text-white" href={site.links.github}>GitHub</a>
+            <a className="text-zinc-200 hover:text-white" href={site.links.linkedin}>LinkedIn</a>
+          </div>
         </div>
+
+        <form
+          onSubmit={(e) => e.preventDefault()}
+          className="rounded-2xl border border-zinc-800/70 bg-zinc-950/40 p-6 backdrop-blur"
+        >
+          <label className="block text-sm text-zinc-300">Name</label>
+          <input
+            className="mt-2 w-full rounded-xl border border-zinc-800 bg-zinc-950/60 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-white/20"
+            placeholder="Your name"
+          />
+
+          <label className="mt-4 block text-sm text-zinc-300">Email</label>
+          <input
+            className="mt-2 w-full rounded-xl border border-zinc-800 bg-zinc-950/60 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-white/20"
+            placeholder="you@email.com"
+          />
+
+          <label className="mt-4 block text-sm text-zinc-300">Message</label>
+          <textarea
+            rows="5"
+            className="mt-2 w-full rounded-xl border border-zinc-800 bg-zinc-950/60 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-white/20"
+            placeholder="Write your message..."
+          />
+
+          <div className="mt-5">
+            <Button variant="primary" className="w-full">Send Message</Button>
+          </div>
+        </form>
       </div>
-
-      <form onSubmit={(e) => e.preventDefault()} className="rounded-2xl border border-zinc-800/70 bg-zinc-950/40 p-6">
-        <label className="block text-sm text-zinc-300">Name</label>
-        <input className="mt-2 w-full rounded-xl border border-zinc-800 bg-zinc-950/60 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-white/20" placeholder="Your name" />
-
-        <label className="mt-4 block text-sm text-zinc-300">Email</label>
-        <input className="mt-2 w-full rounded-xl border border-zinc-800 bg-zinc-950/60 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-white/20" placeholder="you@email.com" />
-
-        <label className="mt-4 block text-sm text-zinc-300">Message</label>
-        <textarea rows="5" className="mt-2 w-full rounded-xl border border-zinc-800 bg-zinc-950/60 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-white/20" placeholder="Write your message..." />
-
-        <button className="mt-5 w-full rounded-xl bg-white px-5 py-3 text-sm font-semibold text-zinc-950 hover:opacity-90" type="submit">
-          Send Message
-        </button>
-      </form>
-    </div>
+    </Container>
   );
 }

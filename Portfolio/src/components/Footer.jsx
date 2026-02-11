@@ -1,12 +1,20 @@
 export default function Footer() {
   return (
-    <footer className="relative border-t border-zinc-800/60">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-4 py-8 text-sm text-zinc-400 sm:px-6 lg:px-8 md:flex-row md:items-center md:justify-between">
-        <p>© {new Date().getFullYear()} Shafay. All rights reserved.</p>
-        <div className="flex flex-wrap gap-4">
-          <a className="hover:text-white" href="#">GitHub</a>
-          <a className="hover:text-white" href="#">LinkedIn</a>
-          <a className="hover:text-white" href="#">Email</a>
+    <footer className="footer">
+      <div className="container">
+        <div className="footerRow">
+          <div>© {new Date().getFullYear()} Shafay Memon. All rights reserved.</div>
+          <div className="footerLinks">
+            <a href="https://github.com/MemonM01" target = "_blank">
+            GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-shafay-memon-02919a265?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bi%2F4X4C%2B7TVyzljI6DCC4DQ%3D%3D" target = "_blank">
+            LinkedIn
+            </a>
+            <a href="mailto:shafaymemon26@gmail.com">
+              Email
+              </a>
+          </div>
         </div>
       </div>
     </footer>
