@@ -91,6 +91,7 @@ export const PROJECTS = [
       "A recreation of the classic Tetris game, featuring piece movement, rotation, line clearing, and scoring.",
     stack: ["JavaScript", "HTML5", "CSS"],
     link: "https://github.com/MemonM01/Tetris",
+    demo: "https://tetris-gilt-eight.vercel.app",
   },
   {
     title: "Drawing Tool",
