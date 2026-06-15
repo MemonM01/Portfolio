@@ -65,25 +65,18 @@ export const CERTIFICATIONS = [
 
 export const PROJECTS = [
   {
-    title: "Full-Stack Project",
+    title: "Community Connect (LeedsHack 2026)",
     description:
-      "A modern web app built with clean UI, strong functionality, and a user-focused experience.",
-    stack: ["React", "TypeScript", "Node.js"],
-    link: "#",
+      "A community events organiser and social platform that helps people discover local events, join communities, and chat with one another.",
+    stack: ["Vue.js", "TypeScript", "Python", "Supabase"],
+    link: "https://github.com/MemonM01/Shafay-Memon---LeedsHack2026",
   },
   {
-    title: "Frontend UI Build",
+    title: "Personal Portfolio",
     description:
-      "A polished and responsive interface focused on accessibility, smooth layout, and modern design.",
-    stack: ["React", "Tailwind", "Vite"],
-    link: "#",
-  },
-  {
-    title: "Software Engineering Project",
-    description:
-      "A practical project showing problem-solving, coding structure, and software engineering skills.",
-    stack: ["GitHub", "APIs", "JavaScript"],
-    link: "#",
+      "This portfolio site itself, a fast, animated, and responsive personal site built to showcase my projects, skills, and experience.",
+    stack: ["React", "Tailwind CSS", "Vite"],
+    link: "https://github.com/MemonM01/Portfolio",
   },
   {
     title: "Tetris Game",
