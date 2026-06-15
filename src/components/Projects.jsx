@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section id="projects" className="mx-auto max-w-6xl px-6 py-20">
       <Reveal>
-        <p className="mb-3 text-sm uppercase tracking-[0.2em] text-emerald-300">
+        <p className="mb-3 text-sm uppercase tracking-[0.2em] text-cyan-300">
           Projects
         </p>
         <h2 className="text-3xl font-bold">Things I've built</h2>
@@ -48,7 +48,7 @@ export default function Projects() {
                     href={project.demo}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-300 transition hover:text-emerald-200"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-300 transition hover:text-white"
                   >
                     Live Demo
                     <ExternalLinkIcon className="h-4 w-4" />

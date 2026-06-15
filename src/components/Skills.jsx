@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-6xl px-6 py-20">
       <Reveal>
-        <p className="mb-3 text-sm uppercase tracking-[0.2em] text-emerald-300">
+        <p className="mb-3 text-sm uppercase tracking-[0.2em] text-cyan-300">
           Skills
         </p>
         <h2 className="text-3xl font-bold">What I work with</h2>

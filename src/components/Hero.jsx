@@ -15,9 +15,6 @@ export default function Hero() {
       id="home"
       className="relative mx-auto grid min-h-[88vh] max-w-6xl items-center gap-10 px-6 py-16 md:grid-cols-2 md:py-24"
     >
-      <div className="pointer-events-none absolute -top-32 right-0 -z-10 h-72 w-72 animate-blob rounded-full bg-cyan-500/20 blur-3xl" />
-      <div className="pointer-events-none absolute bottom-0 left-10 -z-10 h-72 w-72 animate-blob rounded-full bg-purple-500/20 blur-3xl [animation-delay:2s]" />
-
       <div>
         <div className="mb-4 inline-flex items-center rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-300">
           <span className="mr-2 inline-block h-2 w-2 animate-pulse rounded-full bg-cyan-400" />
@@ -26,9 +23,7 @@ export default function Hero() {
 
         <h1 className="text-4xl font-black leading-tight sm:text-5xl md:text-6xl">
           Hello!
-          <span className="block bg-gradient-to-r from-cyan-300 via-emerald-300 to-purple-300 bg-clip-text text-transparent">
-            I'm Shafay
-          </span>
+          <span className="block text-cyan-400">I'm Shafay</span>
         </h1>
 
         <p className="mt-6 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
@@ -85,45 +80,42 @@ export default function Hero() {
       </div>
 
       <div className="relative">
-        <div className="absolute -left-8 top-10 h-40 w-40 rounded-full bg-cyan-400/20 blur-3xl" />
-        <div className="absolute -bottom-10 right-0 h-48 w-48 rounded-full bg-purple-500/20 blur-3xl" />
-
         <div className="relative animate-float rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-xl">
           <div className="mb-5 flex items-center gap-2">
-            <span className="h-3 w-3 rounded-full bg-rose-400" />
-            <span className="h-3 w-3 rounded-full bg-amber-400" />
-            <span className="h-3 w-3 rounded-full bg-emerald-400" />
+            <span className="h-3 w-3 rounded-full bg-slate-700" />
+            <span className="h-3 w-3 rounded-full bg-slate-700" />
+            <span className="h-3 w-3 rounded-full bg-slate-700" />
             <span className="ml-3 text-xs text-slate-400">about-me.ts</span>
           </div>
 
           <div className="rounded-2xl border border-white/10 bg-slate-900/80 p-4 font-mono text-sm leading-7 text-slate-300">
             <p>
-              <span className="text-purple-400">const</span>{" "}
-              <span className="text-cyan-300">developer</span> = {"{"}
+              <span className="text-slate-500">const</span>{" "}
+              <span className="text-cyan-400">developer</span> = {"{"}
             </p>
             <p>
               {"  "}name:{" "}
-              <span className="text-emerald-300">"Shafay Memon"</span>,
+              <span className="text-cyan-200">"Shafay Memon"</span>,
             </p>
             <p>
               {"  "}role:{" "}
-              <span className="text-emerald-300">
+              <span className="text-cyan-200">
                 "Upcoming Software Engineer"
               </span>
               ,
             </p>
             <p>
               {"  "}focus: [
-              <span className="text-emerald-300">"Web"</span>,{" "}
-              <span className="text-emerald-300">"UI"</span>,{" "}
-              <span className="text-emerald-300">"AI"</span>,{" "}
-              <span className="text-emerald-300">"Problem Solving"</span>],
+              <span className="text-cyan-200">"Web"</span>,{" "}
+              <span className="text-cyan-200">"UI"</span>,{" "}
+              <span className="text-cyan-200">"AI"</span>,{" "}
+              <span className="text-cyan-200">"Problem Solving"</span>],
             </p>
             <p>
               {"  "}languages: [
               {languages.map((lang, i) => (
                 <span key={lang}>
-                  <span className="text-emerald-300">"{lang}"</span>
+                  <span className="text-cyan-200">"{lang}"</span>
                   {i < languages.length - 1 ? ", " : ""}
                 </span>
               ))}
@@ -131,7 +123,7 @@ export default function Hero() {
             </p>
             <p>
               {"  "}currentlyLearning:{" "}
-              <span className="text-amber-300">true</span>,
+              <span className="text-cyan-400">true</span>,
             </p>
             <p>{"};"}</p>
           </div>

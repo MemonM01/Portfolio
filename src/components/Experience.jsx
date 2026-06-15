@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <section id="experience" className="mx-auto max-w-6xl px-6 py-20">
       <Reveal>
-        <p className="mb-3 text-sm uppercase tracking-[0.2em] text-emerald-300">
+        <p className="mb-3 text-sm uppercase tracking-[0.2em] text-cyan-300">
           Experience
         </p>
         <h2 className="text-3xl font-bold">My journey so far</h2>
