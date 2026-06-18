@@ -92,6 +92,7 @@ export const PROJECTS = [
       "A browser-based drawing application with brush controls for sketching and creating digital art.",
     stack: ["JavaScript", "HTML5 Canvas", "CSS"],
     link: "https://github.com/MemonM01/Drawing",
+    demo: "https://drawing-phi.vercel.app/",
   },
   {
     title: "Tutor4U",
@@ -101,4 +102,13 @@ export const PROJECTS = [
     link: "https://github.com/MemonM01/Tutor4U",
     demo: "https://memonm01.github.io/Tutor4U/",
   },
+  {
+    title: "Weather",
+    description:
+      "A simple weather app that shows the current weather for your location, or lets you search for any city.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/MemonM01/Weather",
+    demo: "https://weather-peach-nine-28.vercel.app",
+  },
+
 ];
