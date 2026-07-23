@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { CERTIFICATIONS } from "../data/content";
 import { AwardIcon, XIcon, ZoomInIcon } from "./Icons";
 import Reveal from "./Reveal";
+
+const popup = (content) => createPortal(content, document.body);
 
 function Lightbox({ src, alt, onClose }) {
   useEffect(() => {
@@ -14,7 +17,7 @@ function Lightbox({ src, alt, onClose }) {
     };
   }, [onClose]);
 
-  return (
+  return popup(
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-ink/70 p-4 backdrop-blur-sm"
       onClick={onClose}
