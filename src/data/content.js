@@ -72,13 +72,6 @@ export const PROJECTS = [
     link: "https://github.com/MemonM01/Shafay-Memon---LeedsHack2026",
   },
   {
-    title: "Personal Portfolio",
-    description:
-      "This portfolio site itself, a fast, animated, and responsive personal site built to showcase my projects, skills, and experience.",
-    stack: ["React", "Tailwind CSS", "Vite"],
-    link: "https://github.com/MemonM01/Portfolio",
-  },
-  {
     title: "Tetris Game",
     description:
       "A recreation of the classic Tetris game, featuring piece movement, rotation, line clearing, and scoring.",

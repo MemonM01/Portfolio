@@ -3,8 +3,8 @@ import { GithubIcon, LinkedinIcon, MailIcon } from "./Icons";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-slate-950/70">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-slate-400 sm:flex-row">
+    <footer className="border-t border-warm-border bg-white/80">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-muted sm:flex-row">
         <p>
           &copy; {new Date().getFullYear()} Shafay Memon. All rights
           reserved.
@@ -16,7 +16,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
-            className="transition hover:text-white"
+            className="transition hover:text-ink"
           >
             <LinkedinIcon className="h-5 w-5" />
           </a>
@@ -25,14 +25,14 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
-            className="transition hover:text-white"
+            className="transition hover:text-ink"
           >
             <GithubIcon className="h-5 w-5" />
           </a>
           <a
             href={`mailto:${LINKS.email}`}
             aria-label="Email"
-            className="transition hover:text-white"
+            className="transition hover:text-ink"
           >
             <MailIcon className="h-5 w-5" />
           </a>

@@ -6,12 +6,12 @@ export default function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-6xl px-6 py-20">
       <Reveal>
-        <div className="relative overflow-hidden rounded-[2rem] border border-cyan-400/20 bg-white/5 p-8 backdrop-blur-xl">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-cyan-300">
+        <div className="relative overflow-hidden rounded-2xl border border-warm-border bg-white p-8 shadow-sm">
+          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-sage">
             Contact
           </p>
-          <h2 className="text-3xl font-bold">Let's connect</h2>
-          <p className="mt-4 text-slate-300">
+          <h2 className="text-3xl font-bold text-ink">Let's connect</h2>
+          <p className="mt-4 text-body">
             Find me on LinkedIn, GitHub, email, or download my CV below.
           </p>
 
@@ -20,7 +20,7 @@ export default function Contact() {
               href={LINKS.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-2xl bg-ink px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:opacity-90"
             >
               <LinkedinIcon className="h-4 w-4" />
               LinkedIn
@@ -29,14 +29,14 @@ export default function Contact() {
               href={LINKS.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+              className="inline-flex items-center gap-2 rounded-2xl border border-warm-border bg-paper px-5 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:bg-warm-border"
             >
               <GithubIcon className="h-4 w-4" />
               GitHub
             </a>
             <a
               href={`mailto:${LINKS.email}`}
-              className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+              className="inline-flex items-center gap-2 rounded-2xl border border-warm-border bg-paper px-5 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:bg-warm-border"
             >
               <MailIcon className="h-4 w-4" />
               Email
@@ -44,7 +44,7 @@ export default function Contact() {
             <a
               href={LINKS.cv}
               download
-              className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+              className="inline-flex items-center gap-2 rounded-2xl border border-warm-border bg-paper px-5 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:bg-warm-border"
             >
               <DownloadIcon className="h-4 w-4" />
               Download CV

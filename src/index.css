@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
 @theme {
+  --color-sage: #4a7c59;
+  --color-sage-tint: #eef4f1;
+  --color-paper: #f5f4f0;
+  --color-ink: #2c2a27;
+  --color-body: #5a5550;
+  --color-muted: #7a756e;
+  --color-warm-border: #ddd9d3;
   --animate-float: float 6s ease-in-out infinite;
 }
 
@@ -16,8 +23,8 @@
 
 .bg-grid {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(44, 41, 39, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(44, 41, 39, 0.035) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
@@ -28,5 +35,5 @@ html {
 body {
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
-  background: #020617;
+  background: #f5f4f0;
 }

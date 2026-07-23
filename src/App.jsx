@@ -10,8 +10,8 @@ import Skills from "./components/Skills";
 
 export default function App() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-slate-950 text-white">
-      <div className="bg-grid fixed inset-0 -z-10 bg-slate-950" />
+    <div className="min-h-screen overflow-x-hidden bg-paper text-ink">
+      <div className="bg-grid fixed inset-0 -z-10 bg-paper" />
 
       <Navbar />
 

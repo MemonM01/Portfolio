@@ -16,17 +16,17 @@ export default function Hero() {
       className="relative mx-auto grid min-h-[88vh] max-w-6xl items-center gap-10 px-6 py-16 md:grid-cols-2 md:py-24"
     >
       <div>
-        <div className="mb-4 inline-flex items-center rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-300">
-          <span className="mr-2 inline-block h-2 w-2 animate-pulse rounded-full bg-cyan-400" />
+        <div className="mb-4 inline-flex items-center rounded-full border border-sage/30 bg-sage-tint px-4 py-1 text-sm text-sage">
+          <span className="mr-2 inline-block h-2 w-2 animate-pulse rounded-full bg-sage" />
           Upcoming Software Engineer
         </div>
 
-        <h1 className="text-4xl font-black leading-tight sm:text-5xl md:text-6xl">
+        <h1 className="text-4xl font-black leading-tight sm:text-5xl md:text-6xl text-ink">
           Hello!
-          <span className="block text-cyan-400">I'm Shafay</span>
+          <span className="block text-sage">I'm Shafay</span>
         </h1>
 
-        <p className="mt-6 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
+        <p className="mt-6 max-w-xl text-base leading-7 text-body sm:text-lg">
           I'm an aspiring software engineer passionate about creating fast,
           interactive, and visually polished web experiences.
         </p>
@@ -34,7 +34,7 @@ export default function Hero() {
         <div className="mt-8 flex flex-wrap gap-4">
           <a
             href="#projects"
-            className="group inline-flex items-center gap-2 rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-white/10"
+            className="group inline-flex items-center gap-2 rounded-2xl bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-ink/10"
           >
             View Projects
             <ArrowRightIcon className="h-4 w-4 transition group-hover:translate-x-1" />
@@ -43,7 +43,7 @@ export default function Hero() {
           <a
             href={LINKS.cv}
             download
-            className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+            className="inline-flex items-center gap-2 rounded-2xl border border-warm-border bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:bg-paper"
           >
             <DownloadIcon className="h-4 w-4" />
             Download CV
@@ -55,7 +55,7 @@ export default function Hero() {
             href={LINKS.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-slate-300 transition hover:-translate-y-0.5 hover:border-cyan-400/30 hover:text-white"
+            className="inline-flex items-center gap-2 rounded-full border border-warm-border bg-white px-4 py-2 text-muted transition hover:-translate-y-0.5 hover:border-sage/40 hover:text-sage"
           >
             <LinkedinIcon className="h-4 w-4" />
             LinkedIn
@@ -64,14 +64,14 @@ export default function Hero() {
             href={LINKS.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-slate-300 transition hover:-translate-y-0.5 hover:border-cyan-400/30 hover:text-white"
+            className="inline-flex items-center gap-2 rounded-full border border-warm-border bg-white px-4 py-2 text-muted transition hover:-translate-y-0.5 hover:border-sage/40 hover:text-sage"
           >
             <GithubIcon className="h-4 w-4" />
             GitHub
           </a>
           <a
             href={`mailto:${LINKS.email}`}
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-slate-300 transition hover:-translate-y-0.5 hover:border-cyan-400/30 hover:text-white"
+            className="inline-flex items-center gap-2 rounded-full border border-warm-border bg-white px-4 py-2 text-muted transition hover:-translate-y-0.5 hover:border-sage/40 hover:text-sage"
           >
             <MailIcon className="h-4 w-4" />
             Email
@@ -80,42 +80,42 @@ export default function Hero() {
       </div>
 
       <div className="relative">
-        <div className="relative animate-float rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-xl">
+        <div className="relative animate-float rounded-[2rem] border border-warm-border bg-white p-6 shadow-xl">
           <div className="mb-5 flex items-center gap-2">
-            <span className="h-3 w-3 rounded-full bg-slate-700" />
-            <span className="h-3 w-3 rounded-full bg-slate-700" />
-            <span className="h-3 w-3 rounded-full bg-slate-700" />
-            <span className="ml-3 text-xs text-slate-400">about-me.ts</span>
+            <span className="h-3 w-3 rounded-full bg-warm-border" />
+            <span className="h-3 w-3 rounded-full bg-warm-border" />
+            <span className="h-3 w-3 rounded-full bg-warm-border" />
+            <span className="ml-3 text-xs text-muted">about-me.ts</span>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-slate-900/80 p-4 font-mono text-sm leading-7 text-slate-300">
+          <div className="rounded-2xl border border-warm-border bg-paper p-4 font-mono text-sm leading-7 text-body">
             <p>
-              <span className="text-slate-500">const</span>{" "}
-              <span className="text-cyan-400">developer</span> = {"{"}
+              <span className="text-muted">const</span>{" "}
+              <span className="text-sage">developer</span> = {"{"}
             </p>
             <p>
               {"  "}name:{" "}
-              <span className="text-cyan-200">"Shafay Memon"</span>,
+              <span className="text-[#2d6a4f]">"Shafay Memon"</span>,
             </p>
             <p>
               {"  "}role:{" "}
-              <span className="text-cyan-200">
+              <span className="text-[#2d6a4f]">
                 "Upcoming Software Engineer"
               </span>
               ,
             </p>
             <p>
               {"  "}focus: [
-              <span className="text-cyan-200">"Web"</span>,{" "}
-              <span className="text-cyan-200">"UI"</span>,{" "}
-              <span className="text-cyan-200">"AI"</span>,{" "}
-              <span className="text-cyan-200">"Problem Solving"</span>],
+              <span className="text-[#2d6a4f]">"Web"</span>,{" "}
+              <span className="text-[#2d6a4f]">"UI"</span>,{" "}
+              <span className="text-[#2d6a4f]">"AI"</span>,{" "}
+              <span className="text-[#2d6a4f]">"Problem Solving"</span>],
             </p>
             <p>
               {"  "}languages: [
               {languages.map((lang, i) => (
                 <span key={lang}>
-                  <span className="text-cyan-200">"{lang}"</span>
+                  <span className="text-[#2d6a4f]">"{lang}"</span>
                   {i < languages.length - 1 ? ", " : ""}
                 </span>
               ))}
@@ -123,7 +123,7 @@ export default function Hero() {
             </p>
             <p>
               {"  "}currentlyLearning:{" "}
-              <span className="text-cyan-400">true</span>,
+              <span className="text-sage">true</span>,
             </p>
             <p>{"};"}</p>
           </div>
