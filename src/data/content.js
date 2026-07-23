@@ -28,23 +28,23 @@ export const EXPERIENCE = [
     place: "University of Leeds",
     period: "2025 – 2028",
     description:
-      "Coursework in data structures, algorithms, software engineering, and object-oriented programming.",
+      "Studying data structures, algorithms, software engineering, and OOP. Getting a solid foundation while building things outside of coursework too.",
   },
   {
-    type: "Project",
-    title: "Self-Directed Development",
-    place: "Personal & Open Source Projects",
+    type: "Projects",
+    title: "Personal Projects",
+    place: "Self-taught, built in the open",
     period: "Ongoing",
     description:
-      "Building full-stack web applications, exploring new frameworks, and sharpening problem-solving skills through hands-on projects.",
+      "Most of what I know came from building things that didn't have to exist — games, tools, apps. That's still how I learn best.",
   },
   {
     type: "Goal",
     title: "Software Engineering Internship",
-    place: "Seeking Opportunities",
-    period: "2028",
+    place: "Seeking opportunities",
+    period: "2026 – 2027",
     description:
-      "Looking to apply my skills in a collaborative team environment and learn from experienced engineers.",
+      "I want to work somewhere I can contribute real code, see how a professional team operates, and learn a lot in a short amount of time.",
   },
 ];
 
@@ -67,14 +67,14 @@ export const PROJECTS = [
   {
     title: "Community Connect (LeedsHack 2026)",
     description:
-      "A community events organiser and social platform that helps people discover local events, join communities, and chat with one another.",
+      "Built at LeedsHack 2026 — a local events and community platform where you can find what's happening nearby, join groups, and message other members.",
     stack: ["Vue.js", "TypeScript", "Python", "Supabase"],
     link: "https://github.com/MemonM01/Shafay-Memon---LeedsHack2026",
   },
   {
-    title: "Tetris Game",
+    title: "Tetris",
     description:
-      "A recreation of the classic Tetris game, featuring piece movement, rotation, line clearing, and scoring.",
+      "Classic Tetris from scratch — rotation, line clears, score tracking, the works. Good fun to build.",
     stack: ["JavaScript", "HTML5", "CSS"],
     link: "https://github.com/MemonM01/Tetris",
     demo: "https://tetris-gilt-eight.vercel.app",
@@ -82,7 +82,7 @@ export const PROJECTS = [
   {
     title: "Drawing Tool",
     description:
-      "A browser-based drawing application with brush controls for sketching and creating digital art.",
+      "A canvas drawing app I made for fun. Adjustable brush, colours, and a clean blank canvas to mess around on.",
     stack: ["JavaScript", "HTML5 Canvas", "CSS"],
     link: "https://github.com/MemonM01/Drawing",
     demo: "https://drawing-phi.vercel.app/",
@@ -90,7 +90,7 @@ export const PROJECTS = [
   {
     title: "Tutor4U",
     description:
-      "A tutoring service website connecting students with tutors, featuring information on services and how to get started.",
+      "A tutoring platform I designed and built to match students with local tutors. Clean layout, simple booking flow.",
     stack: ["HTML", "CSS", "JavaScript"],
     link: "https://github.com/MemonM01/Tutor4U",
     demo: "https://memonm01.github.io/Tutor4U/",
@@ -98,10 +98,9 @@ export const PROJECTS = [
   {
     title: "Weather",
     description:
-      "A simple weather app that shows the current weather for your location, or lets you search for any city.",
+      "Pulls live weather data and shows it cleanly. Search any city or just use your location.",
     stack: ["HTML", "CSS", "JavaScript"],
     link: "https://github.com/MemonM01/Weather",
     demo: "https://weather-peach-nine-28.vercel.app",
   },
-
 ];

@@ -27,8 +27,9 @@ export default function Hero() {
         </h1>
 
         <p className="mt-6 max-w-xl text-base leading-7 text-body sm:text-lg">
-          I'm an aspiring software engineer passionate about creating fast,
-          interactive, and visually polished web experiences.
+          CS student at Leeds who builds things for the web. I care about the
+          details, how fast something loads, how an interaction feels, what
+          makes a design actually work.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">

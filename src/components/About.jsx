@@ -2,7 +2,7 @@ import Reveal from "./Reveal";
 
 const STATS = [
   { value: "5+", label: "Languages & Frameworks" },
-  { value: "3+", label: "Projects Built" },
+  { value: "5+", label: "Projects Built" },
   { value: "100%", label: "Eager to Learn" },
 ];
 
@@ -15,13 +15,14 @@ export default function About() {
             About Me
           </p>
           <h2 className="text-3xl font-bold text-ink">
-            A future software engineer who loves building things
+            CS student at Leeds, building things on the side
           </h2>
           <p className="mt-4 max-w-3xl leading-7 text-body">
-            I enjoy learning how software works and turning ideas into real
-            projects. I'm focused on improving my coding skills, building
-            strong portfolio projects, and growing into a software engineer
-            who creates useful and modern solutions.
+            I got into software because I liked figuring out how things worked
+            and I never really stopped. Right now I'm studying Computer
+            Science at Leeds, spending a lot of time building projects on the
+            side, and trying to close the gap between what I know and what I
+            want to know.
           </p>
 
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
