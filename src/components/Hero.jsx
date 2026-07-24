@@ -27,9 +27,11 @@ export default function Hero() {
         </h1>
 
         <p className="mt-6 max-w-xl text-base leading-7 text-body sm:text-lg">
-          CS student at Leeds who builds things for the web. I care about the
-          details, how fast something loads, how an interaction feels, what
-          makes a design actually work.
+          Currently a 2nd Year CS student at the University of Leeds, 
+          I've been pulling computers apart and writing code since I was 13, 
+          and I never really stopped, these days I'm doing a CS degree at Leeds and building things with 
+          TypeScript, React, Vue and Python. Most of what's on here started as me wanting to figure out 
+          how something worked.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">
