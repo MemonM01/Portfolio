@@ -103,4 +103,11 @@ export const PROJECTS = [
     link: "https://github.com/MemonM01/Weather",
     demo: "https://weather-peach-nine-28.vercel.app",
   },
+  {
+    title: "Weather",
+    description:
+      "DigitalWardrobe — Catalogue your clothes, get outfits that work. Upload photos of your garments and a rule-based engine builds coordinated looks, scoring each on colour and formality. React + FastAPI + Supabase, deployed on Vercel.",
+    link: "https://github.com/MemonM01/AIWardrobe",
+    demo: "https://ai-wardrobe-4lrk.vercel.app",
+  },
 ];
