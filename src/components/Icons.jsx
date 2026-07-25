@@ -65,6 +65,15 @@ export function ZoomInIcon(props) {
   );
 }
 
+export function FileTextIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" {...props}>
+      <path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M14 3v5h5M8.5 12h7M8.5 15.5h7M8.5 8.5h3" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 export function AwardIcon(props) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" {...props}>

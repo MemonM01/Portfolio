@@ -104,11 +104,25 @@ export const PROJECTS = [
     demo: "https://weather-peach-nine-28.vercel.app",
   },
   {
-    title: "Digital Wardrobe",
+    title: "AIWardrobe",
     description:
       "Catalogue your clothes and get outfit suggestions that actually work. Upload photos of your garments and a rule-based engine builds coordinated looks, scoring each on colour and formality.",
     stack: ["React", "FastAPI", "Supabase"],
     link: "https://github.com/MemonM01/AIWardrobe",
     demo: "https://ai-wardrobe-4lrk.vercel.app",
+  },
+  {
+    title: "2D Platformer Game - NEA",
+    description:
+      "My A-Level NEA, a 2D platformer built in Unity, following a character called Satiro through hand-built levels, combat, and physics. Comes with a full write-up I wrote whilst making it covering the analysis, design, and development process.",
+    stack: ["Unity", "C#", "OOP"],
+    link: "https://github.com/MemonM01/Shafay-Memon-NEA",
+    writeup: "/writeups/nea-game.pdf",
+  },
+  {
+    title: "Distributed MicroBit Sensor Network",
+    description:
+      "A network of MicroBits set up to capture environmental data reliably, with a modular hardware-and-software workflow and proper unit testing behind it. Readings flow into a real-time pipeline built with Pandas and Matplotlib for visual insights.",
+    stack: ["Python", "MicroBit", "Pandas", "Matplotlib"],
   },
 ];
