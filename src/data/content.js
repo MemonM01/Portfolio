@@ -61,6 +61,12 @@ export const CERTIFICATIONS = [
     date: "2026",
     image: "/certificates/ai_tools.png",
   },
+  {
+    title: "Introduction to AI",
+    issuer: "Google",
+    date: "2026",
+    image: "/certificates/into_to_ai.png",
+  },
 ];
 
 export const PROJECTS = [
