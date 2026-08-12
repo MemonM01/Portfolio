@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { CERTIFICATIONS } from "../data/content";
-import { AwardIcon, XIcon, ZoomInIcon } from "./Icons";
+import { AwardIcon, XIcon, ZoomInIcon, ArrowRightIcon } from "./Icons";
 import Reveal from "./Reveal";
+
+
 
 const popup = (content) => createPortal(content, document.body);
 
@@ -81,6 +83,17 @@ function CertificationCard({ certification, delay }) {
               {certification.issuer && certification.date ? " · " : ""}
               {certification.date}
             </p>
+          )}
+          {certification.link && (
+            <a
+              href={certification.link}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-sage transition hover:text-[#3a6347]"
+            >
+              View Code
+              <ArrowRightIcon className="h-4 w-4" />
+            </a>
           )}
         </div>
       </div>

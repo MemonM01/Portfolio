@@ -67,6 +67,13 @@ export const CERTIFICATIONS = [
     date: "2026",
     image: "/certificates/into_to_ai.png",
   },
+  {
+    title: "HTML / CSS Full Course",
+    issuer: "supersimple.dev",
+    date: "2026",
+    image: "/certificates/html_css.png",
+    link: "https://github.com/MemonM01/YoutubeClone---HTML-CSS-Course---SuperSimpleDev"
+  },
 ];
 
 export const PROJECTS = [
