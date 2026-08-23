@@ -9,7 +9,7 @@ export const LINKS = {
 export const SKILLS = [
   {
     category: "Languages",
-    items: ["Python", "JavaScript", "TypeScript", "C#", "C++"],
+    items: ["Python", "JavaScript", "TypeScript", "C#", "C++","HTML", "CSS", "SQL" ],
   },
   {
     category: "Frontend",
@@ -17,7 +17,7 @@ export const SKILLS = [
   },
   {
     category: "Tools & Workflow",
-    items: ["Git", "GitHub", "VS Code", "Node.js", "REST APIs"],
+    items: ["Git", "GitHub", "VS Code", "Node.js", "REST APIs", "Pandas", "NumPy"],
   },
 ];
 
@@ -78,11 +78,35 @@ export const CERTIFICATIONS = [
 
 export const PROJECTS = [
   {
+    title: "AIWardrobe",
+    description:
+      "Catalogue your clothes and get outfit suggestions that actually work. Upload photos of your garments and a rule-based engine builds coordinated looks, scoring each on colour and formality.",
+    stack: ["React", "FastAPI", "Supabase"],
+    link: "https://github.com/MemonM01/AIWardrobe",
+    demo: "https://ai-wardrobe-4lrk.vercel.app",
+  },
+  {
+    title: "Tutor4U",
+    description:
+      "A tutoring platform I designed and built to connect students to me. Clean layout, simple booking flow.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/MemonM01/Tutor4U",
+    demo: "https://memonm01.github.io/Tutor4U/",
+  },
+  {
     title: "Community Connect (LeedsHack 2026)",
     description:
       "Built at LeedsHack 2026 — a local events and community platform where you can find what's happening nearby, join groups, and message other members.",
     stack: ["Vue.js", "TypeScript", "Python", "Supabase"],
     link: "https://github.com/MemonM01/Shafay-Memon---LeedsHack2026",
+  },
+  {
+    title: "2D Platformer Game - NEA",
+    description:
+      "My A-Level NEA, a 2D platformer built in Unity, following a character called Satiro through hand-built levels, combat, and physics. Comes with a full write-up I wrote whilst making it covering the analysis, design, and development process.",
+    stack: ["Unity", "C#", "OOP"],
+    link: "https://github.com/MemonM01/Shafay-Memon-NEA",
+    writeup: "/writeups/nea-game.pdf",
   },
   {
     title: "Tetris",
@@ -101,36 +125,12 @@ export const PROJECTS = [
     demo: "https://drawing-phi.vercel.app/",
   },
   {
-    title: "Tutor4U",
-    description:
-      "A tutoring platform I designed and built to match students with local tutors. Clean layout, simple booking flow.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    link: "https://github.com/MemonM01/Tutor4U",
-    demo: "https://memonm01.github.io/Tutor4U/",
-  },
-  {
     title: "Weather",
     description:
       "Pulls live weather data and shows it cleanly. Search any city or just use your location.",
     stack: ["HTML", "CSS", "JavaScript"],
     link: "https://github.com/MemonM01/Weather",
     demo: "https://weather-peach-nine-28.vercel.app",
-  },
-  {
-    title: "AIWardrobe",
-    description:
-      "Catalogue your clothes and get outfit suggestions that actually work. Upload photos of your garments and a rule-based engine builds coordinated looks, scoring each on colour and formality.",
-    stack: ["React", "FastAPI", "Supabase"],
-    link: "https://github.com/MemonM01/AIWardrobe",
-    demo: "https://ai-wardrobe-4lrk.vercel.app",
-  },
-  {
-    title: "2D Platformer Game - NEA",
-    description:
-      "My A-Level NEA, a 2D platformer built in Unity, following a character called Satiro through hand-built levels, combat, and physics. Comes with a full write-up I wrote whilst making it covering the analysis, design, and development process.",
-    stack: ["Unity", "C#", "OOP"],
-    link: "https://github.com/MemonM01/Shafay-Memon-NEA",
-    writeup: "/writeups/nea-game.pdf",
   },
   {
     title: "Distributed MicroBit Sensor Network",

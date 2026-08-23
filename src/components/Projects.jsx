@@ -57,7 +57,8 @@ export default function Projects() {
               <p className="mt-3 text-sm leading-6 text-body">
                 {project.description}
               </p>
-
+              
+              {/* Languages/Technologies Used for project */}
               <div className="mt-4 flex flex-wrap gap-2">
                 {project.stack.map((item) => (
                   <span
@@ -68,7 +69,8 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-
+              
+              {/* Links  */}
               <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2">
                 {project.link && (
                   <a
