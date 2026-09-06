@@ -3,7 +3,7 @@ export const LINKS = {
     "https://www.linkedin.com/in/muhammad-shafay-memon-02919a265",
   github: "https://github.com/MemonM01",
   email: "shafaymemon26@gmail.com",
-  cv: "/cv.pdf",
+  cv: "/shafaym_cv.pdf",
 };
 
 export const SKILLS = [
