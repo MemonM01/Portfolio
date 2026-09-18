@@ -26,7 +26,7 @@ export const EXPERIENCE = [
     type: "Education",
     title: "B.Sc. Computer Science",
     place: "University of Leeds",
-    period: "2025 – 2028",
+    period: "2025 – 2029",
     description:
       "Studying data structures, algorithms, software engineering, and OOP. Getting a solid foundation while building things outside of coursework too.",
   },
@@ -42,7 +42,7 @@ export const EXPERIENCE = [
     type: "Goal",
     title: "Software Engineering Internship",
     place: "Seeking opportunities",
-    period: "2026 – 2027",
+    period: "2027 – 2028",
     description:
       "I want to work somewhere I can contribute real code, see how a professional team operates, and learn a lot in a short amount of time.",
   },
@@ -74,6 +74,12 @@ export const CERTIFICATIONS = [
     image: "/certificates/html_css.png",
     link: "https://github.com/MemonM01/YoutubeClone---HTML-CSS-Course---SuperSimpleDev"
   },
+  {
+    title: "Python Logic and Flow",
+    issuer: "Coddy",
+    date: "September, 2026",
+    image: "/certificates/coddy_python.png",
+  },
 ];
 
 export const PROJECTS = [
@@ -84,6 +90,13 @@ export const PROJECTS = [
     stack: ["React", "FastAPI", "Supabase"],
     link: "https://github.com/MemonM01/AIWardrobe",
     demo: "https://ai-wardrobe-4lrk.vercel.app",
+  },
+  {
+    title: "UOLPaksoc",
+    description:
+      "uolpaksoc.co.uk is the official site for the University of Leeds Pakistani Society, which I built and still run as a committee member. Hand written HTML, CSS and JavaScript with no framework, so it loads fast and stays easy to update between events. Custom domain through names.co.uk, hosted on Vercel. I keep it current year round, including promotion for our annual Qawwali night.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/MemonM01/Paksoc",
   },
   {
     title: "Tutor4U",
