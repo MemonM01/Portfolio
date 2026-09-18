@@ -97,6 +97,7 @@ export const PROJECTS = [
       "uolpaksoc.co.uk is the official site for the University of Leeds Pakistani Society, which I built and still run as a committee member. Hand written HTML, CSS and JavaScript with no framework, so it loads fast and stays easy to update between events. Custom domain through names.co.uk, hosted on Vercel. I keep it current year round, including promotion for our annual Qawwali night.",
     stack: ["HTML", "CSS", "JavaScript"],
     link: "https://github.com/MemonM01/Paksoc",
+    demo: "https://www.uolpaksoc.co.uk"
   },
   {
     title: "Tutor4U",
