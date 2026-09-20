@@ -16,11 +16,6 @@ export default function Hero() {
       className="relative mx-auto grid min-h-[88vh] max-w-6xl items-center gap-10 px-6 py-16 md:grid-cols-2 md:py-24"
     >
       <div>
-        <div className="mb-4 inline-flex items-center rounded-full border border-sage/30 bg-sage-tint px-4 py-1 text-sm text-sage">
-          <span className="mr-2 inline-block h-2 w-2 animate-pulse rounded-full bg-sage" />
-          Upcoming Software Engineer
-        </div>
-
         <h1 className="text-4xl font-black leading-tight sm:text-5xl md:text-6xl text-ink">
           Hello!
           <span className="block text-sage">I'm Shafay</span>
