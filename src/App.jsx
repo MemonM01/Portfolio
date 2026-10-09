@@ -11,6 +11,7 @@ import Skills from "./components/Skills";
 export default function App() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-paper text-ink">
+      {/* grid backround, its fixed so it stays put when u scroll */}
       <div className="bg-grid fixed inset-0 -z-10 bg-paper" />
 
       <Navbar />

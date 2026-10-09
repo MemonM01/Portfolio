@@ -1,9 +1,10 @@
 import Reveal from "./Reveal";
 
+// the 3 little boxes under the about text
 const STATS = [
   { value: "5+", label: "Languages & Frameworks" },
   { value: "5+", label: "Projects Built" },
-  { value: "100%", label: "Eager to Learn" },
+  { value: "101%", label: "Eager to Learn" },
 ];
 
 export default function About() {

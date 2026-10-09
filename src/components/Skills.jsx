@@ -12,8 +12,9 @@ export default function Skills() {
       </Reveal>
 
       <div className="mt-10 grid gap-6 md:grid-cols-3">
-        {SKILLS.map((group, i) => (
-          <Reveal key={group.category} delay={i * 100}>
+        {/* one card per category, skills come from data/content.js */}
+        {SKILLS.map((group) => (
+          <Reveal key={group.category}>
             <div className="h-full rounded-2xl border border-warm-border bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage/30">
               <h3 className="text-lg font-semibold text-ink">
                 {group.category}

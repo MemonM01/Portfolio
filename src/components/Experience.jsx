@@ -12,9 +12,10 @@ export default function Experience() {
       </Reveal>
 
       <div className="relative mt-12 space-y-8 border-l border-warm-border pl-8">
-        {EXPERIENCE.map((item, i) => (
-          <Reveal key={item.title} delay={i * 100}>
+        {EXPERIENCE.map((item) => (
+          <Reveal key={item.title}>
             <div className="relative">
+              {/* little dot on the timeline line */}
               <span className="absolute -left-[2.45rem] top-1.5 flex h-4 w-4 items-center justify-center rounded-full border border-sage/40 bg-white">
                 <span className="h-2 w-2 rounded-full bg-sage" />
               </span>

@@ -41,6 +41,7 @@ export default function Contact() {
               <MailIcon className="h-4 w-4" />
               Email
             </a>
+            {/* "download" makes it save the pdf insted of opening it */}
             <a
               href={LINKS.cv}
               download

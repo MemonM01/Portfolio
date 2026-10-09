@@ -1,36 +1,8 @@
-import { useEffect, useRef, useState } from "react";
-
-export default function Reveal({ children, className = "", delay = 0 }) {
-  const ref = useRef(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.15 }
-    );
-
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <div
-      ref={ref}
-      className={`transition-all duration-700 ease-out ${
-        visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-      } ${className}`}
-      style={{ transitionDelay: `${delay}ms` }}
-    >
-      {children}
-    </div>
-  );
+// Reveal component
+// used to have a fade in + slide up animation when u scroll to it
+// i took the animaton out cuz i didnt like it, now it just shows stuff normaly
+// children = whatever is put inside <Reveal> ... </Reveal>
+// className = extra tailwind classes u can pass in from outside
+export default function Reveal({ children, className = "" }) {
+  return <div className={className}>{children}</div>;
 }

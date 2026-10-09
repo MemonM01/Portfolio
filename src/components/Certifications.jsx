@@ -6,9 +6,12 @@ import Reveal from "./Reveal";
 
 
 
+// renders stuff straight into <body> so the popup sits on top of everything
 const popup = (content) => createPortal(content, document.body);
 
+// full screen view of a certificate image when u click it
 function Lightbox({ src, alt, onClose }) {
+  // close on Escape + stop the page scrolling behind the popup
   useEffect(() => {
     const onKey = (e) => { if (e.key === "Escape") onClose(); };
     document.addEventListener("keydown", onKey);
@@ -35,6 +38,7 @@ function Lightbox({ src, alt, onClose }) {
       <img
         src={src}
         alt={alt}
+        // clicking the image itself shouldnt close it, only the dark bit around it
         onClick={(e) => e.stopPropagation()}
         className="max-h-[85vh] max-w-[90vw] rounded-2xl border border-warm-border shadow-2xl"
       />
@@ -42,13 +46,14 @@ function Lightbox({ src, alt, onClose }) {
   );
 }
 
-function CertificationCard({ certification, delay }) {
+function CertificationCard({ certification }) {
   const [imageFailed, setImageFailed] = useState(false);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  // only let it zoom if theres an image and it actualy loaded
   const canEnlarge = certification.image && !imageFailed;
 
   return (
-    <Reveal delay={delay}>
+    <Reveal>
       <div className="h-full overflow-hidden rounded-2xl border border-warm-border bg-white shadow-sm transition hover:-translate-y-1 hover:border-sage/30">
         <div
           className={`group relative aspect-video w-full bg-paper ${canEnlarge ? "cursor-zoom-in" : ""}`}
@@ -67,6 +72,7 @@ function CertificationCard({ certification, delay }) {
               </div>
             </>
           ) : (
+            // no image (or it broke) so just show an award icon insted
             <div className="flex h-full w-full items-center justify-center text-muted">
               <AwardIcon className="h-12 w-12" />
             </div>
@@ -120,11 +126,10 @@ export default function Certifications() {
       </Reveal>
 
       <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        {CERTIFICATIONS.map((certification, i) => (
+        {CERTIFICATIONS.map((certification) => (
           <CertificationCard
             key={certification.title}
             certification={certification}
-            delay={i * 100}
           />
         ))}
       </div>

@@ -4,8 +4,10 @@ import { PROJECTS } from "../data/content";
 import { ArrowRightIcon, ExternalLinkIcon, FileTextIcon, XIcon } from "./Icons";
 import Reveal from "./Reveal";
 
+// same popup trick as in Certifications, puts it on top of the whole page
 const popup = (content) => createPortal(content, document.body);
 
+// popup that shows a projects write-up (pdf) inside an iframe
 function WriteupViewer({ src, title, onClose }) {
   useEffect(() => {
     const onKey = (e) => { if (e.key === "Escape") onClose(); };
@@ -38,6 +40,7 @@ function WriteupViewer({ src, title, onClose }) {
 }
 
 export default function Projects() {
+  // which project's write-up is open, null = none open
   const [activeWriteup, setActiveWriteup] = useState(null);
 
   return (
@@ -50,8 +53,8 @@ export default function Projects() {
       </Reveal>
 
       <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        {PROJECTS.map((project, i) => (
-          <Reveal key={project.title} delay={i * 100}>
+        {PROJECTS.map((project) => (
+          <Reveal key={project.title}>
             <div className="group h-full rounded-2xl border border-warm-border bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage/30 hover:shadow-md hover:shadow-sage/5">
               <h3 className="text-xl font-semibold text-ink">{project.title}</h3>
               <p className="mt-3 text-sm leading-6 text-body">

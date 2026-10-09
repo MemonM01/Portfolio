@@ -8,6 +8,7 @@ import {
 } from "./Icons";
 
 export default function Hero() {
+  // first group in SKILLS is the languages one
   const languages = SKILLS[0].items;
 
   return (
@@ -77,6 +78,7 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* the fake code editor card on the right */}
       <div className="relative">
         <div className="relative animate-float rounded-[2rem] border border-warm-border bg-white p-6 shadow-xl">
           <div className="mb-5 flex items-center gap-2">
@@ -114,6 +116,7 @@ export default function Hero() {
               {languages.map((lang, i) => (
                 <span key={lang}>
                   <span className="text-[#2d6a4f]">"{lang}"</span>
+                  {/* comma after every one exept the last */}
                   {i < languages.length - 1 ? ", " : ""}
                 </span>
               ))}

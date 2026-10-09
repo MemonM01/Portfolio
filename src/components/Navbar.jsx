@@ -11,9 +11,11 @@ const NAV_LINKS = [
   { id: "contact", label: "Contact" },
 ];
 
+// just the ids, for useActiveSection
 const SECTION_IDS = NAV_LINKS.map((link) => link.id);
 
 export default function Navbar() {
+  // is the mobile menu open or not
   const [open, setOpen] = useState(false);
   const active = useActiveSection(SECTION_IDS);
 
@@ -47,6 +49,7 @@ export default function Navbar() {
           aria-label="Toggle navigation menu"
           aria-expanded={open}
         >
+          {/* hamburger icon, 3 lines that turn into an X when open */}
           <span className="relative block h-3.5 w-4">
             <span
               className={`absolute left-0 right-0 h-0.5 bg-ink transition-all ${
@@ -67,6 +70,7 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* mobile menu, slides open by changing max-height */}
       <nav
         className={`grid gap-1 overflow-hidden border-t border-warm-border bg-white px-6 transition-[max-height,padding] duration-300 md:hidden ${
           open ? "max-h-96 py-4" : "max-h-0 py-0"

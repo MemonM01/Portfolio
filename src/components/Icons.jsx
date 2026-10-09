@@ -1,3 +1,5 @@
+// all the svg icons used on the site
+// they take props so u can pass className for size/colour
 export function GithubIcon(props) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
