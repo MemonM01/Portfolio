@@ -41,7 +41,6 @@ export default function Hero() {
 
           <a
             href={LINKS.cv}
-            download
             className="inline-flex items-center gap-2 rounded-2xl border border-warm-border bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:bg-paper"
           >
             <DownloadIcon className="h-4 w-4" />

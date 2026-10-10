@@ -1,12 +1,13 @@
 import Reveal from "./Reveal";
 
-// the 3 little boxes under the about text
+// the 3 little boxes under about text
 const STATS = [
   { value: "5+", label: "Languages & Frameworks" },
   { value: "5+", label: "Projects Built" },
   { value: "101%", label: "Eager to Learn" },
 ];
 
+// about section
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-20">
